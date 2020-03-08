@@ -1,5 +1,6 @@
 *.log
 settings.py
+bot_settings.py
 /venv
 /.idea
 /__pycache__
