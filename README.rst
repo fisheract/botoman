@@ -18,6 +18,7 @@ Put images with cats to images folder with filenames cat, only jpg files accepte
 
 Configure
 ---------
+
 Create file bot_settings.py and add there this settings
 
 .. code-block:: python
