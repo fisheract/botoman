@@ -6,7 +6,7 @@ This bot configured for telegram for sending cat pictures to the user.
 Installation
 ------------
 
-Create install, configure and start virtual environment 'venv'_:
+Create install, configure and start virtual environment `venv`_:
 
 .. code-block:: text
 
