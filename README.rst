@@ -32,3 +32,5 @@ START
 -----
 .. code-block:: text
     python3 bot.py
+
+.. _venv: https://docs.python.org/3/tutorial/venv.html
