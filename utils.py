@@ -16,7 +16,7 @@ def get_keyboard():
     contact_button = KeyboardButton('Send contacts', request_contact=True)
     location_button = KeyboardButton('Send location', request_location=True)
     my_keyboard = ReplyKeyboardMarkup([
-        ['Send Cat', 'Change avatar'],
+        ['Send cat', 'Change avatar'],
         [contact_button, location_button]
         ], resize_keyboard=True)
     return my_keyboard

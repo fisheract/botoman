@@ -10,19 +10,20 @@ def greet_user(bot, update, user_data):
     text = 'Hi {}'.format(emo)
     update.message.reply_text(text, reply_markup=get_keyboard())
 
-def talk_to_me(bot, update, user_data):
-    emo = get_user_emo(user_data)
-    user_text = "Привет {}! Ты написал {}".format(update.message.chat.first_name,
-                                                  update.message.text)
-    logging.info("User: %s, Chat id: %s, Message: %s", update.message.chat.username,
-                 update.message.chat.id,
-                 update.message.text)
-    update.message.reply_text(user_text, reply_markup=get_keyboard())
-
 def send_cat_pic(bot, update, user_data):
     cat_list = glob('images/cat*.jp*g')
     cat_pic = choice(cat_list)
     bot.send_photo(chat_id=update.message.chat.id, photo=open(cat_pic, 'rb'), reply_markup=get_keyboard())
+
+def talk_to_me(bot, update, user_data):
+    emo = get_user_emo(user_data)
+    user_text = "Привет {}! Ты написал {}".format(update.message.chat.first_name,
+                                                  update.message.text)
+    logging.info("User: %s, Chat id: %s, Message: %s",
+                 update.message.chat.username,
+                 update.message.chat.id,
+                 update.message.text)
+    update.message.reply_text(user_text, reply_markup=get_keyboard())
 
 def change_avatar(bot, update, user_data):
     if 'emo' in user_data:
