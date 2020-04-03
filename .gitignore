@@ -1,7 +1,7 @@
 *.log
 settings.py
-bot_settings.py
 /venv
 /.idea
 /__pycache__
 .vscode/
+local_bot_settings.py
